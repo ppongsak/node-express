@@ -1,12 +1,8 @@
 FROM node:9.11.2-alpine
 
-RUN mkdir -p /src
-
-RUN npm install express-generator -g
+RUN mkdir /src
 
 WORKDIR /src
-# COPY app/package.json /src/package.json
-RUN npm install
 
 EXPOSE 3000
 
